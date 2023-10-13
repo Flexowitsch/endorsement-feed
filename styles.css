@@ -2,6 +2,155 @@ body {
     margin: 0;
     font-family: 'Inter', sans-serif;
     font-family: 'Josefin Sans', sans-serif;
+    background-color: #1B1924;
+}
+
+/* general layout */
+
+.container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 3rem 2.25rem;
+}
+
+/* utilities */
+
+.flex {
+    display: flex;
 }
 
 /* User input */
+
+
+
+.freddie {
+    width: 5.625rem;
+    height: 5.625rem;
+    margin: 0 auto 1rem auto;
+    display: block;
+}
+
+h1 {
+    margin: 0;
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 1.5625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.inputs-wrapper {
+
+    flex-wrap: wrap;
+    gap: 0.58rem;
+}
+
+.inputs-wrapper * {
+    flex-grow: 1;
+    border: none;
+}
+
+.inputs-wrapper input, .inputs-wrapper textarea {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+    background: #444059;
+    color: #8F8F8F;
+    font-family: Inter;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+}
+
+.inputs-wrapper textarea {
+    text-align: left;
+}
+
+.inputs-wrapper button {
+    border-radius: 0.5rem;
+    background: #28A9F1;
+    padding: 1.5rem 2rem;
+    flex-grow: 1;
+    color: #04131C;
+    text-align: center;
+    font-family: Josefin Sans;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.inputs-wrapper button:hover {
+    background: #2083BB
+}
+
+/* Endorsements */
+
+#endorsementsContainer {
+    margin-top: 1.44rem;
+}
+
+h2 {
+    color: #FFF;
+    font-family: Josefin Sans;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+}
+
+#endorsementsOutputContainer {
+    flex-direction: column;
+    gap: 0.81rem;
+}
+
+.endorsementCard {
+    background: #FFF;
+    padding: 1rem;
+}
+
+.endorsementCard p {
+    color: #000;
+    font-family: Inter;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.endorsementCard p:first-of-type {
+    margin-bottom: 0.81rem;
+}
+
+.endorsementCard p:last-of-type {
+    margin-bottom: 0.52rem;
+}
+
+.toUser {
+ margin: 0;      
+}
+
+.endorsementCard .endorsementText {
+    font-weight: 400;
+    line-height: normal;
+}
+
+div.endorsementFooter.flex {
+    justify-content: space-between;
+}
+
+div.endorsementLikes.flex {
+    gap: 0.25rem;
+    align-items: baseline;
+}
+
+.likeHeart {
+    width: 0.8605rem;
+    height: 0.747rem;
+}

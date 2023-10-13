@@ -4,6 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -19,32 +23,23 @@
         <div id="user-input-container">
             <img src="Freddie.svg" class="freddie">
             <h1>We are the champions</h1>
-            <div class="inputs-wrapper">
-                <input type="text" name="endorsementInput" id="endorsementInput" placeholder="Write your endorsement here">
-                <input type="text" name="fromInput" id="endorsementFrom" placeholder="From">
+            <div class="inputs-wrapper flex">
+                <textarea name="endorsementInput" id="endorsementInput" cols="30" rows="10"
+                    placeholder="Write your endorsement here"></textarea>
+                <input type="text" name="fromInput" id="fromInput" placeholder="From">
                 <input type="text" name="toInput" id="toInput" placeholder="To">
                 <button id="publishEndorsementBtn">Publish</button>
             </div>
         </div>
         <div id="endorsementsContainer">
             <h2>- Endorsements -</h2>
-            <div id="endorsementsOutput">
-                <div class="endorsement-card">
-                    <p id="toUser"></p>
-                    <p id="endorsementText"></p>
-                    <div id="endorsementFooter">
-                        <p id="fromUser"></p>
-                        <div id="endorsementLikes">
-                            <img src="like.svg">
-                            <p class="endorsementLikeCounter"></p>
-                        </div>
-                    </div>
-                </div>
+            <div id="endorsementsOutputContainer" class="flex">
+
             </div>
         </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
 </body>
 
 </html>
