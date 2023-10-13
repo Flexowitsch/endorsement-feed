@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Josefin+Sans:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Endorsements</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="user-input-container">
+            <img src="Freddie.svg" class="freddie">
+            <h1>We are the champions</h1>
+            <div class="inputs-wrapper">
+                <input type="text" name="endorsementInput" id="endorsementInput" placeholder="Write your endorsement here">
+                <input type="text" name="fromInput" id="endorsementFrom" placeholder="From">
+                <input type="text" name="toInput" id="toInput" placeholder="To">
+                <button id="publishEndorsementBtn">Publish</button>
+            </div>
+        </div>
+        <div id="endorsementsContainer">
+            <h2>- Endorsements -</h2>
+            <div id="endorsementsOutput">
+                <div class="endorsement-card">
+                    <p id="toUser"></p>
+                    <p id="endorsementText"></p>
+                    <div id="endorsementFooter">
+                        <p id="fromUser"></p>
+                        <div id="endorsementLikes">
+                            <img src="like.svg">
+                            <p class="endorsementLikeCounter"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
